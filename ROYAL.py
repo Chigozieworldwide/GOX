@@ -7,7 +7,7 @@ except:
 os.system('xdg-open https://chat.whatsapp.com/F9uCvPXPJml891R0KETB6y')
 import requests
 try:
-    if sys.argv[1]=='update':
+    if sys.argv[1]=='chigozie':
         os.system('rm -rf ROYAL.so ROYAL32.so')
 except:
     pass
