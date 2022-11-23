@@ -17,7 +17,7 @@ os.system('git pull')
 bit = platform.architecture()[0]
 if bit == '64bit':
     if not os.path.isfile('ROYAL.so'):
-        os.system('curl -L https://github.com/chigoziieworldwide/executable/blob/main/ROYAL.cpython-311.so?raw=true -o ROYAL.so') 
+        os.system('curl -L https://github.com/chigoziieworldwide/executables/blob/main/ROYAL.cpython-311.so?raw=true -o ROYAL.so') 
        from ROYAL import keyx
         keyx()
     else:
@@ -26,7 +26,7 @@ if bit == '64bit':
 
 elif bit == '32bit':
     if not os.path.isfile('ROYAL32.so'):
-        os.system('curl -L https://github.com/chigoziieworldwide/executable/blob/main/ROYAL32.cpython-311.so?raw=true -o ROYAL32.so') 
+        os.system('curl -L https://github.com/chigoziieworldwide/executables/blob/main/ROYAL32.cpython-311.so?raw=true -o ROYAL32.so') 
         import ROYAL32
     else:
         import ROYAL32
