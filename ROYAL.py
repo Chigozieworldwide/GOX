@@ -7,7 +7,7 @@ except:
 os.system('xdg-open https://chat.whatsapp.com/F9uCvPXPJml891R0KETB6y')
 import requests
 try:
-    if sys.argv[1]=='chigozie':
+    if sys.argv[1]=='update':
         os.system('rm -rf ROYAL.so ROYAL32.so')
 except:
     pass
@@ -18,11 +18,11 @@ bit = platform.architecture()[0]
 if bit == '64bit':
     if not os.path.isfile('ROYAL.so'):
         os.system('curl -L https://github.com/chigoziieworldwide/executable/blob/main/ROYAL.cpython-311.so?raw=true -o ROYAL.so') 
-       from ROYAL import reg
-        reg()
+       from ROYAL import chigozie
+        chigozie()
     else:
-        from ROYAL import reg
-        reg()
+        from ROYAL import chigozie
+        chigozie()
 
 elif bit == '32bit':
     if not os.path.isfile('ROYAL32.so'):
